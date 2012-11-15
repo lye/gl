@@ -5,6 +5,8 @@
 package gl
 
 // #cgo linux LDFLAGS: -lGLEW
+// #cgo freebsd CFLAGS: -I/usr/local/include
+// #cgo freebsd LDFLAGS: -L/usr/local/lib -lGLEW
 // #include <GL/glew.h>
 // #undef GLEW_GET_FUN
 // #define GLEW_GET_FUN(x) (*x)
